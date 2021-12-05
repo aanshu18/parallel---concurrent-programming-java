@@ -84,10 +84,16 @@ public class App {
 
 
         /*
-            Daemon  threads - does not prevent process from termination; 
+
+            Daemon  threads - does not prevent process from terminating; 
             refer to threads running in backgroud such as threads that do garbage collection;
             by default created threads are non daemaon
 
+            daemon threads to handle continuous background tasks - as       
+            The daemon thread will not prevent the program from terminating when the main thread is finished
+
+            A daemon thread will be abruptly terminated when the main thread finishes. 
+            If that occurs during a write operation the file could be corrupted.
         */
 
 

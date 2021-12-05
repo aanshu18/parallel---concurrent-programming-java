@@ -16,7 +16,18 @@ class ChefOlivia implements Runnable {
 
 public class ThreadLifecycleDemoRunnable {
 
+    /*
+        Thread VS runnable 
+        threads- a class which extends thread cant extend any other class as multiple inheritance is not allowed but using\
+         Runnable interface we can implement other interfaces and also extend a class 
 
+         When we instantiate a class which extends thread , each instance will be each separate object BUT 
+         when using runnable , we can instantiate runnable object once and create multiple threads from it.All of those threads will 
+         share same object which will reduce memory usage
+
+
+
+    */
 
 
 
